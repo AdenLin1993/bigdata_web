@@ -1,0 +1,50 @@
+2021-05-16 17:59:06,456 ERROR: Exception on /index/ [GET] [in C:\Users\15016\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "C:\Users\15016\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\15016\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\15016\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\15016\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\15016\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\15016\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\15016\AppData\Local\Programs\Python\Python37\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "E:\工作项目\lgdgrzx_web_v1_flask\myapp\views\routes.py", line 41, in index
+    def login():
+  File "C:\Users\15016\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\15016\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\15016\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\15016\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\15016\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\15016\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\15016\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\15016\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "E:\工作项目\lgdgrzx_web_v1_flask\myapp\templates\index.html", line 25, in template
+    {% endblock %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2021-05-16 18:00:24,294 INFO: Microblog startup [in E:\工作项目\lgdgrzx_web_v1_flask\myapp\__init__.py:58]
+2021-05-16 18:00:25,035 INFO: Microblog startup [in E:\工作项目\lgdgrzx_web_v1_flask\myapp\__init__.py:58]
+2021-05-16 18:07:17,908 INFO: Microblog startup [in E:\工作项目\lgdgrzx_web_v1_flask\myapp\__init__.py:58]
+2021-05-16 18:11:45,633 INFO: Microblog startup [in E:\工作项目\lgdgrzx_web_v1_flask\myapp\__init__.py:58]
+2021-05-16 18:11:46,390 INFO: Microblog startup [in E:\工作项目\lgdgrzx_web_v1_flask\myapp\__init__.py:58]
+2021-05-16 18:12:44,245 INFO: Microblog startup [in E:\工作项目\lgdgrzx_web_v1_flask\myapp\__init__.py:58]
+2021-05-16 18:12:49,312 INFO: Microblog startup [in E:\工作项目\lgdgrzx_web_v1_flask\myapp\__init__.py:58]
+2021-05-16 18:17:55,042 INFO: Microblog startup [in E:\工作项目\lgdgrzx_web_v1_flask\myapp\__init__.py:58]
+2021-05-16 18:18:32,513 INFO: Microblog startup [in E:\工作项目\lgdgrzx_web_v1_flask\myapp\__init__.py:58]
+2021-05-16 18:20:23,035 INFO: Microblog startup [in E:\工作项目\lgdgrzx_web_v1_flask\myapp\__init__.py:58]
+2021-05-16 18:22:05,973 INFO: Microblog startup [in E:\工作项目\lgdgrzx_web_v1_flask\myapp\__init__.py:58]
+2021-05-16 18:22:25,024 INFO: Microblog startup [in E:\工作项目\lgdgrzx_web_v1_flask\myapp\__init__.py:58]
+2021-05-16 18:22:59,228 INFO: Microblog startup [in E:\工作项目\lgdgrzx_web_v1_flask\myapp\__init__.py:58]
